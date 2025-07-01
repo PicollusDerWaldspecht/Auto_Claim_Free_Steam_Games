@@ -2,7 +2,7 @@
 
 Ein automatischer C# Windows Service, der kostenlose Steam-Spiele ("Free to Keep") automatisch auf deinem Account aktiviert.
 
-## 🎮 Features
+## Features
 
 - **Automatische Erkennung**: Überwacht SteamDB auf kostenlose Spiele
 - **Intelligente Filterung**: Aktiviert nur "Free to Keep" Spiele (nicht Free Weekends)
@@ -11,14 +11,14 @@ Ein automatischer C# Windows Service, der kostenlose Steam-Spiele ("Free to Keep
 - **Detailliertes Logging**: Vollständige Protokollierung aller Aktivitäten
 - **Konfigurierbar**: Anpassbare Prüfintervalle und Einstellungen
 
-## 📋 Voraussetzungen
+## Voraussetzungen
 
 - Windows 10/11
 - .NET 8.0 Runtime
 - Steam Account mit aktiviertem Steam Guard (empfohlen)
 - Internetverbindung
 
-## 🚀 Installation
+## Installation
 
 ### 1. Projekt kompilieren
 
@@ -64,7 +64,7 @@ sc start "Steam Free Games Claimer"
 dotnet run -- --console
 ```
 
-## 🔧 Konfiguration
+## Konfiguration
 
 ### Steam Guard Setup
 
@@ -96,7 +96,7 @@ Wenn du Steam Guard aktiviert hast:
 }
 ```
 
-## 📊 Logging
+## Logging
 
 Die Anwendung erstellt detaillierte Logs:
 
@@ -110,7 +110,7 @@ Die Anwendung erstellt detaillierte Logs:
 - `Warning`: Probleme die automatisch behoben werden
 - `Error`: Kritische Fehler
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### Häufige Probleme
 
@@ -137,24 +137,24 @@ Für detaillierte Fehlerdiagnose:
 dotnet run -- --console --environment Development
 ```
 
-## 🔒 Sicherheit
+## Sicherheit
 
 - **Credentials**: Werden nur lokal in `appsettings.json` gespeichert
 - **Verschlüsselung**: Passwörter sollten in einer Produktionsumgebung verschlüsselt werden
 - **Berechtigungen**: Der Service benötigt nur Internetzugang
 
-## 📈 Performance
+## Performance
 
 - **CPU**: Minimal (< 1% bei normaler Nutzung)
 - **RAM**: ~50-100 MB
 - **Netzwerk**: Nur bei Prüfungen aktiv
 - **Speicher**: Logs werden automatisch rotiert
 
-## 🤝 Beitragen
+## Beitragen
 
 Verbesserungsvorschläge und Bug-Reports sind willkommen!
 
-## ⚠️ Haftungsausschluss
+## ⚠Haftungsausschluss
 
 Diese Software ist für Bildungszwecke erstellt. Die Verwendung erfolgt auf eigene Gefahr. Beachte die Steam-Nutzungsbedingungen.
 
